@@ -1,0 +1,7 @@
+<ul class="todo-list">
+    
+    <!-- class `editing` when editing and `completed` when marked as completed -->
+    <app-todo-item *ngFor="let todo of todos|filterTodo : stateFilter"
+                    [todo]="todo"></app-todo-item>
+    
+  </ul>
